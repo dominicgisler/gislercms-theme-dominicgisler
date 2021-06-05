@@ -1,12 +1,20 @@
-<footer class="mt-2 border rounded bg-light p-4">
-    <div class="row">
-        <div class="col-7 col-sm-9">
-            Copyright &copy; {{ 'now'|date('Y') }} by Gisler Software
-        </div>
-        <div class="col-5 col-sm-3 text-right">
-            <a href="{{ base_url() }}/impressum" class="text-dark">Impressum</a>
-            <span class="d-none d-lg-inline">|</span>
-            <a href="{{ base_url() }}/datenschutz" class="text-dark">Datenschutz</a>
-        </div>
+<footer>
+    <div class="border-top mt-4 py-4">
+        <a href="https://www.linkedin.com/in/dominic-gisler-b30508115/" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 mr-2">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.xing.com/profile/Dominic_Gisler" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 mx-2">
+            <i class="fab fa-xing"></i>
+        </a>
+        <a href="https://github.com/dominicgisler" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 mx-2">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://beerjump.app" target="_blank" class="btn btn-light fa-2x rounded-circle px-3 ml-2">
+            <i class="fa fa-beer"></i>
+        </a>
+    </div>
+    <div class="border-top pt-4 footer">
+        {% set widget = widget.getWidget('footer') %}
+        {{ widget_translation.getWidgetTranslation(widget, page.getLanguage()).getContent()|replace({'{{year}}': now|date('Y')})|raw }}
     </div>
 </footer>

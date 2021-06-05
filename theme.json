@@ -1,7 +1,7 @@
 {
-  "title": "GislerCMS default",
-  "description": "Default theme for GislerCMS",
-  "homepage": "https://github.com/dominicgisler/gislercms-theme",
+  "title": "Dominic Gisler",
+  "description": "Design für dominicgisler.ch",
+  "homepage": "https://github.com/dominicgisler/gislercms-theme-dominicgisler",
   "license": "GPL-3.0-only",
   "authors": [
     {

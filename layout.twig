@@ -7,10 +7,17 @@
     </head>
     <body>
         <div class="container my-4">
-            {% include 'header.twig' %}
-            {% include 'navigation.twig' %}
-            {% include 'main.twig' %}
-            {% include 'footer.twig' %}
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <div class="card">
+                        <div class="card-body text-center p-4">
+                            {% include 'header.twig' %}
+                            {% include 'main.twig' %}
+                            {% include 'footer.twig' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         {% include 'cookie-info.twig' %}
         {% include 'scripts.twig' %}
