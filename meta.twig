@@ -1,7 +1,3 @@
-{% set meta_img = page.getMetaImage() %}
-{% if meta_img and (not (meta_img starts with 'http://') and not (meta_img starts with 'https://')) %}
-    {% set meta_img = base_url() ~ '/uploads/' ~ meta_img %}
-{% endif %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

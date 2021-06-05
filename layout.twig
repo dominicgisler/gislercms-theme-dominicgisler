@@ -1,3 +1,7 @@
+{% set meta_img = page.getMetaImage() %}
+{% if meta_img and (not (meta_img starts with 'http://') and not (meta_img starts with 'https://')) %}
+    {% set meta_img = base_url() ~ '/uploads/' ~ meta_img %}
+{% endif %}
 <!DOCTYPE html>
 <html lang="{{ page.getLanguage().getLocale() }}">
     <head>
